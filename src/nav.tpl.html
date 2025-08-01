@@ -1,0 +1,16 @@
+<nav>
+  <ul class="p-0 list-none flex gap-4">
+    <li>
+      <a class="p-2 border no-underline hover:bg-gray-200" href="#" :prevent :on:click="$$tab = 'home'"
+        :class="$$tab === 'home' ? 'bg-gray-200' : ''" data-nav="home">
+        Home
+      </a>
+    </li>
+    <li>
+      <a class="p-2 border no-underline hover:bg-gray-200" href="#" :prevent :on:click="$$tab = 'about'"
+        :class="$$tab === 'about' ? 'bg-gray-200' : ''" data-nav="about">
+        About
+      </a>
+    </li>
+  </ul>
+</nav>

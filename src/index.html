@@ -1,0 +1,17 @@
+<head>
+  <title>Mancha Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//unpkg.com/mancha@0.14" css="utils" no-cache></script>
+</head>
+
+<body class="p-0 m-0 flex flex-col items-center justify-center min-h-full bg-gray-100">
+  <include src="./nav.tpl.html"></include>
+  <include src="./main.tpl.html"></include>
+</body>
+
+<script type="module">
+  import { main } from "./index.main.js";
+  await main(Mancha, document.body);
+  await Mancha.mount(document.body);
+</script>

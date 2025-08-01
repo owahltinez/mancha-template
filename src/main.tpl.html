@@ -1,0 +1,15 @@
+<main>
+  <section data-tab="home" :show="$$tab === 'home'">
+    <h1>Welcome to Mancha Template</h1>
+    <p>
+      This is the home page.
+      <a href="#" :prevent :on:click="incrementCounter()">
+        Click counter: <span id="home-click-count">{{ counter }}</span>
+      </a>
+    </p>
+  </section>
+  <section data-tab="about" :show="$$tab === 'about'">
+    <h1>About Mancha Template</h1>
+    <p>This is the about page.</p>
+  </section>
+</main>

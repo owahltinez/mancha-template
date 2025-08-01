@@ -1,0 +1,16 @@
+{
+  "name": "mancha-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npx http-server -p 8080 ./src",
+    "test": "node --test ./src/**/*.test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "mancha": "^0.14.3"
+  }
+}
